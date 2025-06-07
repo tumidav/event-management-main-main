@@ -13,6 +13,8 @@ class ServerConfig {
   client: sdk.Client = new sdk.Client();
   regDb: string = `${process.env.NEXT_PUBLIC_REGDB}`;
   sponDb: string = `${process.env.NEXT_PUBLIC_SPODB}`;
+  // regColl: string = `${process.env.NEXT_PUBLIC_REGCOLL}`;
+  // spoColl: string = `${process.env.NEXT_PUBLIC_SPOCOLL}`;
   databases: sdk.Databases = new sdk.Databases(this.client);
 
   constructor() {
